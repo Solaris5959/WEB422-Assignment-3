@@ -34,7 +34,7 @@ export default function About(listing) {
                 <br />
 
                 One listing that interest me is{` `}
-                <Link href={`/listing/${listing._id}`} passHref>
+                <Link href={`/listing/${listing.listing._id}`} passHref>
                      "Ribeira Charming Duplex"
                 </Link>
 
@@ -42,7 +42,7 @@ export default function About(listing) {
             </p>
           </Card.Body>
           {/* ListingDetails component showing specific listing details */}
-          <ListingDetails listing={listing} />
+          <ListingDetails listing={listing.listing} />
         </Card>
       </div>
     );

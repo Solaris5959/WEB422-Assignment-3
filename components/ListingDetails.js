@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function ListingDetails( prop ) {
-    const listing = prop.listing.listing || prop.listing;
+    const listing = prop.listing;
 
     return (
       <Container>
